@@ -6,7 +6,6 @@ RUN apt-get update && \
 RUN wget http://www.baasbox.com/download/baasbox-stable.zip && \
     unzip -o baasbox-stable.zip && \
     mv baasbox*/ /opt/baasbox && \
-    rm /opt/baasbox/start && \
     mkdir -p /var/data/baasbox
 EXPOSE 80 
 VOLUME /var/data/baasbox
